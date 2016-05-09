@@ -23,8 +23,8 @@ nunjucksDate.setDefaultFormat('MMMM Do YYYY, h:mm:ss a');
 env.addFilter("date", nunjucksDate);
 
 var ITEMS_PER_PAGE = 5;
-var mongoDb = 'mongodb://localhost:27017/qustions';
-
+// var mongoDb = 'mongodb://localhost:27017/qustions';
+var mongoDb =  'mongodb://root:12345@ds013221.mlab.com:13221/questions';
 
 
 MongoClient.connect(mongoDb, function(err, db) {
