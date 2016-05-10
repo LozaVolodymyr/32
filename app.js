@@ -116,11 +116,11 @@ MongoClient.connect(mongoDb, function(err, db) {
         "use strict";
 
         var itemId = parseInt(req.params.itemId);
-        var review = req.body.review;
+        var a = req.body.review;
         var name = req.body.name;
         var stars = parseInt(req.body.stars);
 
-        items.addAnswer(itemId, answer, name,  function(itemDoc) {
+        items.addAnswer(itemId, review, name,  function(itemDoc) {
             res.redirect("/item/" + itemId);
         });
     });

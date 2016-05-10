@@ -44,6 +44,11 @@
                 <div class="row">
                    <div class="col-md-10">
                         <h3><a href="/item/{{item._id}}">{{item.title}}</a></h3>
+                        {% if item.reviews.length == undefined %}
+                        <p>Answers: <strong>0</strong></p>
+                        {% else %}
+                        <p>Answers: <strong>{{item.reviews.length}}</strong></p>
+                        {% endif %}
                         <p>{{item.name}}</p>
                         <p>{{item.description}}</p>
                         <a class="btn btn-primary" href="/item/{{item._id}}">View Question <span class="glyphicon glyphicon-chevron-right"></span></a>

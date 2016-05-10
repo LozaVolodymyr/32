@@ -1,0 +1,16 @@
+{
+    "remotePath": "/",
+    "host": "93.170.168.232",
+    "username": "root",
+    "password": "WUTPQs5llcFY",
+    "port": 22,
+    "protocol": "sftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "ignore": [
+        "\\.vscode",
+        "\\.git"
+    ]
+}
